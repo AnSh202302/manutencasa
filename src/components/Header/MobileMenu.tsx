@@ -2,12 +2,12 @@ import {
   CloseButton,
   Drawer,
   IconButton,
-  Link,
   Portal,
   VStack,
 } from "@chakra-ui/react";
 import { LuMenu } from "react-icons/lu";
 import dataNavigation from "../../data/navigation";
+import CustomLink from "../CustomLink";
 
 function MobileMenu() {
   return (
@@ -23,25 +23,22 @@ function MobileMenu() {
 
         <Drawer.Positioner>
           <Drawer.Content>
-            <Drawer.Header alignItems="center">
+            <Drawer.Header>
               <Drawer.CloseTrigger asChild>
                 <CloseButton />
               </Drawer.CloseTrigger>
             </Drawer.Header>
 
-            <Drawer.Body>
+            <Drawer.Body
+              display="flex"
+              alignItems="center"
+              justifyContent="center"
+            >
               <VStack gap={8}>
                 {dataNavigation.map((item) => (
-                  <Link
-                    key={item.href}
-                    fontSize="2xl"
-                    fontWeight="bold"
-                    href={item.href}
-                    _hover={{ textDecoration: "none", color: "brand.primary" }}
-                    _focus={{ outline: "none", color: "brand.primary" }}
-                  >
+                  <CustomLink key={item.href} href={item.href}>
                     {item.name}
-                  </Link>
+                  </CustomLink>
                 ))}
               </VStack>
             </Drawer.Body>
