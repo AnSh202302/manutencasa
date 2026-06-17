@@ -1,39 +1,74 @@
-import { Box, Flex, Heading, Icon } from "@chakra-ui/react";
+import { Box, Flex, Heading, Icon, HStack } from "@chakra-ui/react";
 import { MdHandyman } from "react-icons/md";
 import MobileMenu from "./MobileMenu";
+import dataNavigation from "../../data/navigation";
+import CustomLink from "../CustomLink";
 
 function Header() {
   return (
-    <Flex
-      as="header"
-      w="100%"
-      h="80px"
-      p={4}
-      position="sticky"
-      top={0}
-      zIndex={1000}
-      align="center"
-      justify="space-between"
-      borderBottom="1px solid"
-      borderColor="gray.200"
-      bgColor="brand.white"
-      boxShadow="0px 4px 6px rgba(0, 0, 0, 0.1)"
-    >
-      <Flex alignItems="center" gap={4} fontWeight="bold">
-        <Icon size="2xl" color="brand.primary">
-          <MdHandyman />
-        </Icon>
-        <Box>
-          <Heading as="h3" fontSize="xl" lineHeight="short" fontWeight="bold">
-            ManutenCasa
-          </Heading>
-          <Heading as="h5" fontSize="xs" lineHeight="short">
-            di Francesco Berardi
-          </Heading>
+    <Box as="header" role="banner" position="sticky" top={0} zIndex={1000}>
+      <Flex
+        mx="auto"
+        w="100%"
+        h={{ base: "64px", md: "80px" }}
+        px={{ base: 6, md: 12, lg: 20 }}
+        align="center"
+        justify="space-between"
+        borderBottom="1px solid"
+        borderColor="gray.200"
+        bg="brand.white"
+        boxShadow="sm"
+      >
+        <CustomLink href="/" _hover={{ textDecoration: "none" }}>
+          <Flex align="center" gap={3}>
+            <Icon as={MdHandyman} boxSize={8} color="brand.primary" />
+
+            <Box>
+              <Heading
+                as="h1"
+                fontSize="lg"
+                lineHeight="short"
+                fontWeight="bold"
+              >
+                ManutenCasa
+              </Heading>
+              <Heading
+                as="h3"
+                fontSize="xs"
+                fontWeight="semibold"
+                lineHeight="short"
+              >
+                di Francesco Berardi
+              </Heading>
+            </Box>
+          </Flex>
+        </CustomLink>
+
+        <HStack gap={8} display={{ base: "none", md: "flex" }}>
+          {dataNavigation.map(({ name, href }) => (
+            <CustomLink
+              key={name}
+              href={href}
+              _hover={{
+                textDecoration: "none",
+                color: "brand.primary",
+              }}
+              _focusVisible={{
+                outline: "2px solid",
+                outlineColor: "brand.primary",
+                borderRadius: "4px",
+              }}
+            >
+              {name}
+            </CustomLink>
+          ))}
+        </HStack>
+
+        <Box display={{ base: "block", md: "none" }}>
+          <MobileMenu />
         </Box>
       </Flex>
-      <MobileMenu />
-    </Flex>
+    </Box>
   );
 }
 

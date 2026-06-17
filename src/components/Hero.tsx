@@ -25,6 +25,7 @@ function Hero() {
       }}
     >
       <Box
+        maxW={{ base: "30rem", md: "50rem" }}
         flex="1"
         alignSelf="center"
         mt={{ base: 8, md: 12, lg: 0 }}
@@ -32,14 +33,12 @@ function Hero() {
       >
         <Heading
           as="h1"
-          fontSize={{ base: "4xl", md: "5xl", lg: "7xl" }}
+          fontSize={{ base: "2.75rem", md: "7xl", lg: "7xl" }}
           fontWeight="900"
           lineHeight="1.1"
           color="brand.white"
         >
-          Manutenzione casa,
-          <br />
-          senza stress
+          Manutenzione, senza stress
         </Heading>
 
         <Separator my={6} borderColor="brand.white" maxW="120px" size="lg" />
@@ -49,7 +48,7 @@ function Hero() {
           affidabili e disponibili anche in giornata.
         </Text>
 
-        <Flex gap={3} wrap="wrap">
+        <Flex gap={4} wrap="wrap">
           <CustomButton>Richiedi un preventivo</CustomButton>
 
           <CustomButton
