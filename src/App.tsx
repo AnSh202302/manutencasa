@@ -1,4 +1,4 @@
-import AboutAs from "./components/AboutAs";
+import About from "./components/About";
 import Contact from "./components/Contact";
 import Gallery from "./components/Gallery";
 import Header from "./components/Header";
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Hero />
       <Services />
-      <AboutAs />
+      <About />
       <Gallery />
       <Contact />
     </>
