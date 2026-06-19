@@ -1,47 +1,29 @@
-import {
-  Box,
-  Flex,
-  Heading,
-  Text,
-  Separator,
-  Span,
-  Card,
-  Icon,
-} from "@chakra-ui/react";
+import { Box, Flex, Text, Separator, Card, Icon, Span } from "@chakra-ui/react";
 import Section from "./Section";
 import dataServices from "../data/services";
 function Services() {
   return (
-    <Section id="services">
-      <Flex direction="column" alignItems="center" gap="6">
-        <Heading as="h3" size="xl" color="brand.primary">
-          Offro
-        </Heading>
-        <Heading
-          as="h2"
-          size={{ base: "4xl", md: "5xl" }}
-          letterSpacing="normal"
-          fontWeight="900"
-          textAlign="center"
-        >
-          Servizi di ristrutturazione
-        </Heading>
-        <Separator borderColor="brand.yellow" w="10%" size="lg" />
-        <Text textAlign="center">
+    <Section
+      id="services"
+      wrap="wrap"
+      headingPart1="Offro"
+      headingPart2="Servizi di ristrutturazione"
+      description={
+        <Text>
           Posso liberarti facilmente dalle incombenze domestiche. Ho già aiutato
-          tantissime di cittadini del Bolona a migliorare le proprie case e a
+          tantissime di cittadini del Bologna a migliorare le proprie case e a
           mantenere le proprie proprietà in perfette condizioni.{" "}
           <Span color="brand.yellow" fontWeight="bold">
             Cosa posso fare per te?
           </Span>
         </Text>
-      </Flex>
+      }
+    >
       <Flex
         direction={{ base: "column", md: "row" }}
         wrap="wrap"
         justify="center"
         gap={4}
-        mt={8}
       >
         {dataServices.map((service) => (
           <Card.Root
