@@ -28,12 +28,13 @@ function Section({
     <Flex
       as="section"
       direction={{ base: "column", lg: "row" }}
+      justifyContent="center"
       gap={{ base: 8, lg: 16 }}
       py={12}
       px={{ base: 6, md: 8, lg: 10 }}
       {...flexProps}
     >
-      <Flex direction="column" alignItems={directionItems} gap={6}>
+      <Flex direction="column" w="full" alignItems={directionItems} gap={6}>
         <Heading as="h3" size="xl" color="brand.primary">
           {headingPart1}
         </Heading>

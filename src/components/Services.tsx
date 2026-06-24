@@ -1,6 +1,7 @@
-import { Box, Flex, Text, Separator, Card, Icon, Span } from "@chakra-ui/react";
+import { Flex, Text, Span } from "@chakra-ui/react";
 import Section from "./Section";
 import dataServices from "../data/services";
+import CustomCard from "./CustomCard";
 function Services() {
   return (
     <Section
@@ -26,46 +27,7 @@ function Services() {
         gap={4}
       >
         {dataServices.map((service) => (
-          <Card.Root
-            key={service.title}
-            w={{
-              base: "100%",
-              md: "calc(50% - 12px)",
-              lg: "calc(33.333% - 16px)",
-            }}
-            maxW={{ md: "320px" }}
-            border="none"
-            borderTop="4px solid"
-            borderColor="brand.primary"
-            borderRadius="md"
-            boxShadow="md"
-          >
-            <Card.Body alignItems="center" gap={4} p={4}>
-              {service.icon && (
-                <Box
-                  w="70px"
-                  h="70px"
-                  borderRadius="full"
-                  bg={service.color || "brand.primary"}
-                  display="flex"
-                  alignItems="center"
-                  justifyContent="center"
-                >
-                  <Icon as={service.icon} boxSize={8} fill="brand.white" />
-                </Box>
-              )}
-
-              <Card.Title letterSpacing="wide">{service.title}</Card.Title>
-              <Separator
-                borderColor={service.color || "brand.primary"}
-                w="20%"
-                size="lg"
-              />
-              <Card.Description textAlign="center">
-                {service.description}
-              </Card.Description>
-            </Card.Body>
-          </Card.Root>
+          <CustomCard data={service} key={service.title} />
         ))}
       </Flex>
     </Section>

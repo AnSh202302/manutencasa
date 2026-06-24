@@ -3,8 +3,9 @@ import { FaFaucetDrip } from "react-icons/fa6";
 import { MdElectricalServices } from "react-icons/md";
 import { BsDoorOpen } from "react-icons/bs";
 import { TbAssemblyFilled } from "react-icons/tb";
+import type { ContentItem } from "../types";
 
-const dataServices = [
+const dataServices: ContentItem[] = [
   {
     icon: AiOutlineFormatPainter,
     title: "Imbianchino",

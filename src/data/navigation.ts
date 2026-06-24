@@ -1,4 +1,6 @@
-const dataNavigation = [
+import type { NavigationType } from "../types";
+
+const dataNavigation: NavigationType[] = [
   {
     name: "Servizi",
     href: "#services",
