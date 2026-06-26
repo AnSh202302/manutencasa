@@ -7,7 +7,7 @@ import {
 } from "@chakra-ui/react";
 import { LuMenu } from "react-icons/lu";
 import dataNavigation from "../../data/navigation";
-import CustomLink from "../CustomLink";
+import CustomLink from "../CustomLink/HeaderLink";
 import { useState } from "react";
 
 function MobileMenu() {

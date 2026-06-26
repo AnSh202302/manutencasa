@@ -2,7 +2,7 @@ import { Box, Flex, Heading, Icon, HStack } from "@chakra-ui/react";
 import { MdHandyman } from "react-icons/md";
 import MobileMenu from "./MobileMenu";
 import dataNavigation from "../../data/navigation";
-import CustomLink from "../CustomLink";
+import CustomLink from "../CustomLink/HeaderLink";
 
 function Header() {
   return (

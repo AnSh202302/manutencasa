@@ -49,17 +49,7 @@ function Hero() {
 
         <Flex gap={4} wrap="wrap">
           <CustomButton>Richiedi un preventivo</CustomButton>
-
-          <CustomButton
-            bg="brand.white"
-            color="brand.black"
-            _hover={{
-              bg: "brand.primary",
-              color: "brand.white",
-            }}
-          >
-            Scopri di più
-          </CustomButton>
+          <CustomButton variant1>Scopri di più</CustomButton>
         </Flex>
       </Box>
 
