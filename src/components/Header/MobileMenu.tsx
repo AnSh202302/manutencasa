@@ -8,10 +8,17 @@ import {
 import { LuMenu } from "react-icons/lu";
 import dataNavigation from "../../data/navigation";
 import CustomLink from "../CustomLink";
+import { useState } from "react";
 
 function MobileMenu() {
+  const [open, setOpen] = useState(false);
   return (
-    <Drawer.Root placement="end" size="sm">
+    <Drawer.Root
+      placement="end"
+      size="sm"
+      open={open}
+      onOpenChange={(event) => setOpen(event.open)}
+    >
       <Drawer.Trigger asChild>
         <IconButton aria-label="Apri menu" variant="ghost">
           <LuMenu />
@@ -36,7 +43,11 @@ function MobileMenu() {
             >
               <VStack gap={8}>
                 {dataNavigation.map((item) => (
-                  <CustomLink key={item.href} href={item.href}>
+                  <CustomLink
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setOpen(false)}
+                  >
                     {item.name}
                   </CustomLink>
                 ))}
