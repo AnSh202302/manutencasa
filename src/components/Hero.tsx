@@ -26,14 +26,13 @@ function Hero() {
     >
       <Box
         maxW={{ base: "30rem", md: "50rem" }}
-        flex="1"
         alignSelf="center"
         mt={{ base: 8, md: 12, lg: 0 }}
         zIndex={1}
       >
         <Heading
           as="h1"
-          fontSize={{ base: "2.75rem", md: "7xl", lg: "7xl" }}
+          fontSize={{ base: "3xl", md: "7xl", lg: "7xl" }}
           fontWeight="900"
           lineHeight="1.1"
           color="brand.white"
@@ -64,20 +63,9 @@ function Hero() {
         </Flex>
       </Box>
 
-      <Box
-        flex="1"
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        zIndex={1}
-      >
-        <Image
-          src="/manutencasa/francesco.png"
-          alt="Francesco"
-          alignSelf="flex-end"
-          objectFit="contain"
-        />
-      </Box>
+      <Flex w="full" alignSelf="flex-end" justifyContent="center" zIndex={1}>
+        <Image src="/manutencasa/francesco.png" alt="Francesco" />
+      </Flex>
     </Flex>
   );
 }

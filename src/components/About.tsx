@@ -1,11 +1,11 @@
 import Section from "./Section";
-import { Text, Image } from "@chakra-ui/react";
+import { Text, Image, Flex } from "@chakra-ui/react";
 
 function About() {
   return (
     <Section
       id="about"
-      alignItems="center"
+      alignItems="flex-start"
       pb={0}
       bgImage=" linear-gradient(
 0deg,rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.98) 80% ), url('/manutencasa/about-bg.jpg')"
@@ -30,11 +30,9 @@ function About() {
         </>
       }
     >
-      <Image
-        src="/manutencasa/francesco.png"
-        alt="About ManutenCasa"
-        textAlign="center"
-      />
+      <Flex alignSelf="flex-end" w="full" justifyContent="center">
+        <Image src="/manutencasa/francesco.png" alt="About ManutenCasa" />
+      </Flex>
     </Section>
   );
 }

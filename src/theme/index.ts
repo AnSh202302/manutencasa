@@ -8,6 +8,7 @@ const customConfig = defineConfig({
       boxSizing: "border-box",
       color: "brand.text",
       fontSize: "18px",
+      scrollBehavior: "smooth",
     },
     "h1, h2, h3, h4, h5, h6": {
       color: "brand.black",

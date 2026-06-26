@@ -27,21 +27,23 @@ function Section({
   return (
     <Flex
       as="section"
+      minH="100vh"
       direction={{ base: "column", lg: "row" }}
       justifyContent="center"
       gap={{ base: 8, lg: 16 }}
       py={12}
       px={{ base: 6, md: 8, lg: 10 }}
+      scrollMarginTop={{ base: 14 }}
       {...flexProps}
     >
       <Flex direction="column" w="full" alignItems={directionItems} gap={6}>
-        <Heading as="h3" size="xl" color="brand.primary">
+        <Heading as="h3" size="lg" color="brand.primary">
           {headingPart1}
         </Heading>
 
         <Heading
           as="h2"
-          size={{ base: "4xl", md: "5xl" }}
+          size={{ base: "3xl", md: "5xl" }}
           letterSpacing="normal"
           fontWeight="900"
           textAlign={directionItems}

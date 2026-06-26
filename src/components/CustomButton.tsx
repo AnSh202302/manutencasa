@@ -3,7 +3,7 @@ import { Button, type ButtonProps } from "@chakra-ui/react";
 function CustomButton(props: ButtonProps) {
   return (
     <Button
-      h={14}
+      size={{ base: "md", md: "xl" }}
       bg="brand.primary"
       color="brand.white"
       borderRadius={6}
