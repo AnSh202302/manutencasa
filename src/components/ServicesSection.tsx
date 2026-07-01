@@ -1,7 +1,7 @@
 import { Flex, Text, Span } from "@chakra-ui/react";
 import Section from "./Section";
 import dataServices from "../data/services";
-import CustomCard from "./CustomCard";
+import CustomCard from "./Cards/CustomCard";
 function Services() {
   return (
     <Section

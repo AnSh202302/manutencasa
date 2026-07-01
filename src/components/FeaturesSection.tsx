@@ -1,6 +1,6 @@
 import { Flex } from "@chakra-ui/react";
 import dataFeatures from "../data/features";
-import CustomCard from "./CustomCard";
+import CustomCard from "./Cards/CustomCard";
 import Section from "./Section";
 
 function FeaturesSection() {

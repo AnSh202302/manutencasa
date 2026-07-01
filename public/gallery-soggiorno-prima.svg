@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Soggiorno prima della ristrutturazione">
+  <rect width="900" height="520" fill="#343432"/>
+  <polygon points="0,0 900,0 900,306 318,360" fill="#5f625d"/>
+  <polygon points="0,312 900,306 900,520 0,520" fill="#a8aca9"/>
+  <polygon points="0,0 360,0 225,300 0,315" fill="#252624"/>
+  <g fill="#6b3e32" opacity=".72">
+    <rect x="44" y="58" width="38" height="16"/>
+    <rect x="92" y="58" width="38" height="16"/>
+    <rect x="140" y="58" width="38" height="16"/>
+    <rect x="68" y="86" width="38" height="16"/>
+    <rect x="116" y="86" width="38" height="16"/>
+    <rect x="164" y="86" width="38" height="16"/>
+    <rect x="44" y="114" width="38" height="16"/>
+    <rect x="92" y="114" width="38" height="16"/>
+    <rect x="140" y="114" width="38" height="16"/>
+    <rect x="68" y="142" width="38" height="16"/>
+    <rect x="116" y="142" width="38" height="16"/>
+    <rect x="164" y="142" width="38" height="16"/>
+    <rect x="44" y="170" width="38" height="16"/>
+    <rect x="92" y="170" width="38" height="16"/>
+    <rect x="140" y="170" width="38" height="16"/>
+  </g>
+  <rect x="364" y="0" width="36" height="390" fill="#86542f"/>
+  <rect x="360" y="382" width="44" height="70" fill="#686a64"/>
+  <polygon points="610,98 694,78 638,268 556,286" fill="#e8eceb"/>
+  <polygon points="706,72 792,52 738,248 654,268" fill="#edf0ef"/>
+  <rect x="510" y="282" width="390" height="24" fill="#20201f"/>
+  <path d="M30 478c106-17 236-21 378-9 124 11 252 7 414-22" fill="none" stroke="#888d8a" stroke-width="9" opacity=".52"/>
+</svg>

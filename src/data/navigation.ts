@@ -6,7 +6,7 @@ const dataNavigation: NavigationType[] = [
     href: "#services",
   },
   { name: "Chi siamo", href: "#about" },
-  { name: "Lavori", href: "#gallery" },
+  { name: "Galleria", href: "#gallery" },
   {
     name: "Contatti",
     href: "#contact",

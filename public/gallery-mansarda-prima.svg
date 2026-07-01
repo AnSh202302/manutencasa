@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-label="Mansarda prima della ristrutturazione">
+  <defs>
+    <linearGradient id="wall" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#d8dbe0"/>
+      <stop offset="1" stop-color="#f5f6f6"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="520" fill="#d1d4d1"/>
+  <polygon points="0,0 900,0 730,315 0,400" fill="url(#wall)"/>
+  <polygon points="0,400 900,315 900,520 0,520" fill="#bfc3c2"/>
+  <polygon points="0,0 230,0 58,278 0,308" fill="#eef1f3"/>
+  <polygon points="620,0 900,0 730,315 614,330" fill="#c8cbca"/>
+  <rect x="127" y="0" width="38" height="350" fill="#8a5c34"/>
+  <rect x="124" y="342" width="44" height="66" fill="#6b6f69"/>
+  <rect x="510" y="0" width="38" height="380" fill="#7c512e"/>
+  <rect x="506" y="372" width="46" height="74" fill="#626861"/>
+  <polygon points="225,52 292,36 233,238 170,258" fill="#ffffff"/>
+  <polygon points="675,80 762,64 706,250 622,268" fill="#ffffff"/>
+  <rect x="292" y="0" width="210" height="140" fill="#9f6a43" opacity=".28"/>
+  <g fill="#6d4933" opacity=".34">
+    <rect x="306" y="16" width="34" height="12"/>
+    <rect x="350" y="16" width="34" height="12"/>
+    <rect x="394" y="16" width="34" height="12"/>
+    <rect x="438" y="16" width="34" height="12"/>
+    <rect x="328" y="42" width="34" height="12"/>
+    <rect x="372" y="42" width="34" height="12"/>
+    <rect x="416" y="42" width="34" height="12"/>
+    <rect x="460" y="42" width="34" height="12"/>
+    <rect x="306" y="68" width="34" height="12"/>
+    <rect x="350" y="68" width="34" height="12"/>
+    <rect x="394" y="68" width="34" height="12"/>
+    <rect x="438" y="68" width="34" height="12"/>
+  </g>
+  <path d="M65 477c110-24 218-25 350-12 112 11 217 8 393-18" fill="none" stroke="#aab0ae" stroke-width="8" opacity=".55"/>
+</svg>
