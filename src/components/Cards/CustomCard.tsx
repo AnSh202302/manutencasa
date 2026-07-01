@@ -6,7 +6,7 @@ import {
   Separator,
   Image,
 } from "@chakra-ui/react";
-import type { ContentItem } from "../types";
+import type { ContentItem } from "../../types";
 
 interface CustomCardProps extends CardRootProps {
   data: ContentItem;
