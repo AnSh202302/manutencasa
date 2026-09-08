@@ -38,7 +38,11 @@ function Contact() {
 
           <Flex gap={4} flexWrap={{ base: "wrap", md: "nowrap" }}>
             <CustomButton asChild bgColor="brand.green">
-              <ContactLink href="https://wa.me/393289487163">
+              <ContactLink
+                href="https://wa.me/393289487163?text=Ciao%2C%20vorrei%20richiedere%20un%20preventivo."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <LuMessageCircle />
                 WhatsApp
               </ContactLink>

@@ -4,9 +4,14 @@ interface CustomButtonProps extends ButtonProps {
   variant1?: boolean;
 }
 
-function CustomButton({ variant1 = false, ...props }: CustomButtonProps) {
+function CustomButton({
+  variant1 = false,
+  children,
+  ...props
+}: CustomButtonProps) {
   return (
     <Button
+      {...props}
       size={{ base: "md", md: "xl" }}
       bgColor={variant1 ? "brand.white" : "brand.primary"}
       color={variant1 ? "brand.black" : "brand.white"}
@@ -20,8 +25,9 @@ function CustomButton({ variant1 = false, ...props }: CustomButtonProps) {
         color: "brand.white",
       }}
       boxShadow="0px 4px 6px rgba(0, 0, 0, 0.1)"
-      {...props}
-    />
+    >
+      {children}
+    </Button>
   );
 }
 

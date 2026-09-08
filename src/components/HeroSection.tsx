@@ -48,8 +48,18 @@ function Hero() {
         </Text>
 
         <Flex gap={4} wrap="wrap">
-          <CustomButton>Richiedi un preventivo</CustomButton>
-          <CustomButton variant1>Scopri di più</CustomButton>
+          <CustomButton>
+            <a
+              href="https://wa.me/393289487163?text=Ciao%2C%20vorrei%20richiedere%20un%20preventivo."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Richiedi un preventivo
+            </a>
+          </CustomButton>
+          <CustomButton asChild variant1>
+            <a href="#services">Scopri di più</a>
+          </CustomButton>
         </Flex>
       </Box>
 
