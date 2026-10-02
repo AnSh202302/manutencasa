@@ -30,7 +30,7 @@ function About() {
       }
     >
       <Flex alignSelf="flex-end" w="full" justifyContent="center">
-        <Image src="/manutencasa/Handyman.png" alt="About ManutenCasa" />
+        <Image src="/manutencasa/Handyman.png" alt="Un artigiano sorridente con cintura porta attrezzi" />
       </Flex>
     </Section>
   );
