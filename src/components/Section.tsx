@@ -4,6 +4,7 @@ import {
   type FlexProps,
   Heading,
   Separator,
+  Text,
 } from "@chakra-ui/react";
 import type { ReactNode } from "react";
 import type { TextProps } from "@chakra-ui/react";
@@ -47,9 +48,15 @@ function Section({
         gap={6}
         zIndex={1}
       >
-        <Heading as="h3" size="lg" color="brand.primary">
+        <Text
+          as="p"
+          textStyle="lg"
+          fontFamily="heading"
+          fontWeight="semibold"
+          color="brand.primary"
+        >
           {headingPart1}
-        </Heading>
+        </Text>
 
         <Heading
           as="h2"

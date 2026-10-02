@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Icon, HStack } from "@chakra-ui/react";
+import { Box, Flex, Heading, Icon, HStack, Text } from "@chakra-ui/react";
 import { MdHandyman } from "react-icons/md";
 import MobileMenu from "./MobileMenu";
 import dataNavigation from "../../data/navigation";
@@ -32,19 +32,25 @@ function Header() {
               >
                 ManutenCasa
               </Heading>
-              <Heading
-                as="h3"
+              <Text
+                as="p"
                 fontSize="xs"
+                fontFamily="heading"
                 fontWeight="semibold"
                 lineHeight="short"
               >
                 di Francesco Berardi
-              </Heading>
+              </Text>
             </Box>
           </Flex>
         </CustomLink>
 
-        <HStack gap={8} display={{ base: "none", md: "flex" }}>
+        <HStack
+          as="nav"
+          aria-label="Navigazione principale"
+          gap={8}
+          display={{ base: "none", md: "flex" }}
+        >
           {dataNavigation.map(({ name, href }) => (
             <CustomLink
               key={name}

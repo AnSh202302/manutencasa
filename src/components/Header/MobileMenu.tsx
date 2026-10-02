@@ -41,7 +41,7 @@ function MobileMenu() {
               alignItems="center"
               justifyContent="center"
             >
-              <VStack gap={8}>
+              <VStack as="nav" aria-label="Navigazione mobile" gap={8}>
                 {dataNavigation.map((item) => (
                   <CustomLink
                     key={item.href}
