@@ -25,7 +25,7 @@ function Header() {
 
             <Box>
               <Heading
-                as="h1"
+                as="span"
                 fontSize="lg"
                 lineHeight="short"
                 fontWeight="bold"

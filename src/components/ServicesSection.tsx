@@ -1,4 +1,4 @@
-import { Flex, Text, Span } from "@chakra-ui/react";
+import { Flex, Text, Box } from "@chakra-ui/react";
 import Section from "./Section";
 import dataServices from "../data/services";
 import CustomCard from "./Cards/CustomCard";
@@ -10,14 +10,21 @@ function Services() {
       headingPart1="Offro"
       headingPart2="Servizi di ristrutturazione"
       description={
-        <Text>
-          Posso liberarti facilmente dalle incombenze domestiche. Ho già aiutato
-          tantissime di cittadini del Bologna a migliorare le proprie case e a
-          mantenere le proprie proprietà in perfette condizioni.{" "}
-          <Span color="brand.yellow" fontWeight="bold">
-            Cosa posso fare per te?
-          </Span>
-        </Text>
+     <Box>
+  <Text mb={4}>
+    Hai poco tempo per occuparti dei lavori di casa?
+  </Text>
+
+  <Text mb={4}>
+    Mi occupo di piccoli lavori di manutenzione e riparazione per aiutarti a
+    tenere la tua casa in ordine e risolvere quei problemi che spesso rimangono
+    in sospeso.
+  </Text>
+
+  <Text color="brand.yellow" fontWeight="bold">
+    Cosa posso fare per te?
+  </Text>
+</Box>
       }
     >
       <Flex

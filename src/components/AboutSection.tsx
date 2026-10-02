@@ -15,17 +15,16 @@ function About() {
       description={
         <>
           <Text>
-            Se hai bisogno di riparazioni domestiche o semplicemente di sbrigare
-            una serie di piccoli lavori in casa, e fai fatica a trovare un
-            tuttofare qualificato e professionale, contatta ManutenCasa: il tuo
-            servizio di fiducia in zona. ManutenCasa è un servizio di
-            manutenzione domestica che offre Sono qualificato è a disposizione
-            per qualsiasi intervento domestico.
+           Hai un piccolo lavoro da fare in casa e non sai a chi rivolgerti?
           </Text>
           <Text mt={6}>
-            Posso occuparci di lavori di ogni tipo e complessità, tra cui
-            impianti idraulici ed elettrici, tinteggiatura e molto altro ancora.
-            Mettiti in contatto e i verro a trovarti in giornata.
+            Con ManutenCasa hai un unico punto di riferimento per le riparazioni e i lavori di manutenzione di tutti i giorni. Mi occupo di piccoli interventi idraulici ed elettrici, tinteggiatura, montaggio, riparazioni e tanti altri lavori per la casa.
+          </Text>
+          <Text mt={6}>
+            Lavoro con attenzione e precisione, cercando sempre di trovare una soluzione pratica e adatta alle tue esigenze.
+          </Text>
+          <Text mt={6}>
+            Se hai un lavoro da fare, contattami: raccontami di cosa hai bisogno e valutiamo insieme come risolverlo.
           </Text>
         </>
       }

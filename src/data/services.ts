@@ -8,36 +8,36 @@ import type { ContentItem } from "../types";
 const dataServices: ContentItem[] = [
   {
     icon: AiOutlineFormatPainter,
-    title: "Imbianchino",
+    title: "Imbiancatura",
     description:
-      "Tinteggiatura interni ed esterni, trattamenti antimuffa e anti condensa, decorazioni, verniciatura di porte, infissi e ringhiere",
+      "Tinteggiatura di interni ed esterni, trattamenti antimuffa e anticondensa, decorazioni e verniciatura di porte, infissi e ringhiere.",
     color: "brand.primary",
   },
   {
     icon: FaFaucetDrip,
 
-    title: "Riparazioni Idrauliche",
+    title: "Riparazioni idrauliche",
     description:
-      "Montaggiosanitari, sostituzione rubinetti, manutenzioni scarichi",
+      "Montaggio di sanitari, sostituzione di rubinetti e manutenzione degli scarichi.",
     color: "brand.yellow",
   },
   {
     icon: MdElectricalServices,
-    title: "Lavori Elettrici",
-    description: "sostituzione prese, installazione lampadari",
+    title: "Lavori elettrici",
+    description: "Sostituzione di prese e interruttori, installazione di lampadari e piccoli interventi elettrici.",
     color: "brand.blue",
   },
   {
     icon: BsDoorOpen,
-    title: "Infissi e Serramenti",
+    title: "Infissi e serramenti",
     description:
-      "riparazione tapparelle, sigillatura spifferi, regolazione porte e finestre",
+      "Riparazione di tapparelle, sigillatura degli spifferi e regolazione di porte e finestre.",
     color: "brand.purple",
   },
   {
     icon: TbAssemblyFilled,
     title: "Montaggio",
-    description: "montaggio mobili e mensole",
+    description: "Montaggio di mobili, mensole e altri elementi per la casa.",
   },
 ];
 
