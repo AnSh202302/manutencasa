@@ -64,7 +64,7 @@ function Hero() {
       </Box>
 
       <Flex w="full" alignSelf="flex-end" justifyContent="center" zIndex={1}>
-        <Image src="/manutencasa/francesco.png" alt="Francesco" />
+        <Image src="/manutencasa/Francesco_hero.png" alt="Francesco" />
       </Flex>
     </Flex>
   );
