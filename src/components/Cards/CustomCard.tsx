@@ -42,7 +42,15 @@ function CustomCard({ data, ...props }: CustomCardProps) {
             <Icon as={data.icon} boxSize={8} fill="brand.white" />
           </Box>
         )}
-        {data.img && <Image src={data.img} w="100%" h={60} objectFit="cover" />}
+        {data.img && (
+          <Image
+            src={data.img}
+            alt={data.alt ?? ""}
+            w="100%"
+            h={60}
+            objectFit="cover"
+          />
+        )}
 
         <Card.Title letterSpacing="wide">{data.title}</Card.Title>
         <Separator

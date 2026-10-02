@@ -6,6 +6,7 @@ export interface ContentItem {
   color?: string;
   icon?: IconType;
   img?: string;
+  alt?: string;
 }
 export interface NavigationType {
   name: string;
