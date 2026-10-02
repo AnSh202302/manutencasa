@@ -29,7 +29,7 @@ function MobileMenu() {
         <Drawer.Backdrop />
 
         <Drawer.Positioner>
-          <Drawer.Content>
+          <Drawer.Content aria-label="Navigazione mobile">
             <Drawer.Header>
               <Drawer.CloseTrigger asChild>
                 <CloseButton />
