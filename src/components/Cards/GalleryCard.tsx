@@ -16,6 +16,17 @@ function GalleryCard({ data }: GalleryCardProps) {
       h={{ base: "260px", md: "360px", xl: "460px" }}
       overflow="hidden"
       bg="brand.grey"
+      css={{
+        "&:has(input:focus-visible)::after": {
+          content: '""',
+          position: "absolute",
+          inset: 0,
+          border: "3px solid",
+          borderColor: "brand.primary",
+          pointerEvents: "none",
+          zIndex: 4,
+        },
+      }}
     >
       <Image
         src={data.before}
