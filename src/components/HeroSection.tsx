@@ -48,7 +48,7 @@ function Hero() {
         </Text>
 
         <Flex gap={4} wrap="wrap">
-          <CustomButton>
+          <CustomButton asChild>
             <a
               href="https://wa.me/393289487163?text=Ciao%2C%20vorrei%20richiedere%20un%20preventivo."
               target="_blank"
