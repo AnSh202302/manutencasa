@@ -7,8 +7,8 @@ function Services() {
     <Section
       id="services"
       wrap="wrap"
-      headingPart1="Offro"
-      headingPart2="Servizi di ristrutturazione"
+      headingPart1="I miei "
+      headingPart2="Servizi"
       description={
      <Box>
   <Text mb={4}>
@@ -17,7 +17,7 @@ function Services() {
 
   <Text mb={4}>
     Mi occupo di piccoli lavori di manutenzione e riparazione per aiutarti a
-    tenere la tua casa in ordine e risolvere quei problemi che spesso rimangono
+    tenere la tua casa in ordine e a risolvere quei problemi che spesso rimangono
     in sospeso.
   </Text>
 

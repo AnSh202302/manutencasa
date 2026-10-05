@@ -10,7 +10,7 @@ const dataServices: ContentItem[] = [
     icon: AiOutlineFormatPainter,
     title: "Imbiancatura",
     description:
-      "Tinteggiatura di interni ed esterni, trattamenti antimuffa e anticondensa, decorazioni e verniciatura di porte, infissi e ringhiere.",
+      "Tinteggiatura di interni ed esterni, trattamenti antimuffa e anticondensa, verniciatura di porte, infissi e ringhiere.",
     color: "brand.primary",
   },
   {
