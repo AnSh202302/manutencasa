@@ -3,15 +3,17 @@ import { MdHandyman } from "react-icons/md";
 import MobileMenu from "./MobileMenu";
 import dataNavigation from "../../data/navigation";
 import CustomLink from "../CustomLink/HeaderLink";
+import CustomButton from "../CustomButton";
 
 function Header() {
   return (
     <Box as="header" role="banner" position="sticky" top={0} zIndex={1000}>
       <Flex
         mx="auto"
+        gap={2}
         w="100%"
         h={{ base: "64px", md: "80px" }}
-        px={{ base: 6, md: 12, lg: 20 }}
+        px={6}
         align="center"
         justify="space-between"
         borderBottom="1px solid"
@@ -45,30 +47,43 @@ function Header() {
           </Flex>
         </CustomLink>
 
-        <HStack
-          as="nav"
-          aria-label="Navigazione principale"
-          gap={8}
-          display={{ base: "none", md: "flex" }}
-        >
-          {dataNavigation.map(({ name, href }) => (
-            <CustomLink
-              key={name}
-              href={href}
-              _hover={{
-                textDecoration: "none",
-                color: "brand.primary",
-              }}
-              _focusVisible={{
-                outline: "2px solid",
-                outlineColor: "brand.primary",
-                borderRadius: "4px",
-              }}
-            >
-              {name}
-            </CustomLink>
-          ))}
-        </HStack>
+        <Flex align="center" gap={{base:2, lg: 4}} display={{ base: "none", md: "flex" }} >
+          <HStack
+            as="nav" aria-label="Navigazione principale" gap={{ base: 2, md: 2 }}>
+            {dataNavigation.map(({ name, href }) => (
+              <CustomLink
+                key={name}
+                href={href}
+                _hover={{
+                  textDecoration: "none",
+                  color: "brand.primary",
+                }}
+                _focusVisible={{
+                  outline: "2px solid",
+                  outlineColor: "brand.primary",
+                  borderRadius: "4px",
+                }}
+              >
+                {name}
+              </CustomLink>
+            ))}
+          </HStack>
+                  <HStack gap={3} display={{ base: "none", md: "flex" }} >
+            <CustomButton size="sm" asChild>
+              <a href="tel:+393289487163">Chiama</a>
+            </CustomButton>
+            <CustomButton size="sm" asChild variant1>
+              <a
+                href="https://wa.me/393289487163"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp
+              </a>
+            </CustomButton>
+          </HStack>
+        </Flex>
+
 
         <Box display={{ base: "block", md: "none" }}>
           <MobileMenu />
