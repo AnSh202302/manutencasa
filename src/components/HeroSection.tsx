@@ -1,5 +1,6 @@
 import { Flex, Heading, Separator, Text, Image, Box } from "@chakra-ui/react";
 import CustomButton from "./CustomButton";
+import ContactLink from "./CustomLink/ContactLink";
 
 function Hero() {
   return (
@@ -37,26 +38,22 @@ function Hero() {
           lineHeight="1.1"
           color="brand.white"
         >
-          Manutenzione, senza stress
+          Manutenzione e riparazioni casa a Bologna
         </Heading>
 
         <Separator my={6} borderColor="brand.white" maxW="120px" size="lg" />
 
         <Text fontSize={{ base: "md", md: "lg" }} mb={8}>
-          Trovi l&apos;artigiano giusto in pochi click. Interventi rapidi,
-          affidabili e disponibili anche in giornata.
+          Piccoli lavori, riparazioni e manutenzione direttamente a domicilio.
         </Text>
 
         <Flex gap={4} wrap="wrap">
           <CustomButton asChild>
-            <a
-              href="https://wa.me/393289487163?text=Ciao%2C%20vorrei%20richiedere%20un%20preventivo."
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Richiedi un preventivo
-            </a>
+            <ContactLink href="tel:+393289487163">
+                Chiama ora
+              </ContactLink>
           </CustomButton>
+          
           <CustomButton asChild variant1>
             <a href="#services">Scopri di più</a>
           </CustomButton>
