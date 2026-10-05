@@ -1,4 +1,5 @@
 import Contact from "./components/ContactSection";
+import FAQSection from "./components/FAQSection";
 import FeaturesSection from "./components/FeaturesSection";
 import Gallery from "./components/GallerySection";
 import Header from "./components/Header";
@@ -20,6 +21,7 @@ function App() {
         <AboutSection />
         <FeaturesSection />
         <Gallery />
+        <FAQSection />
         <Contact />
       </main>
     </>
