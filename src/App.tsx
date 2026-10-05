@@ -5,6 +5,7 @@ import Gallery from "./components/GallerySection";
 import Header from "./components/Header";
 import Hero from "./components/HeroSection";
 import Services from "./components/ServicesSection";
+import ProblemCTASection from "./components/ProblemCTASection";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <main>
         <Hero />
         <Services />
+        <ProblemCTASection/>
         <About />
         <FeaturesSection />
         <Gallery />
