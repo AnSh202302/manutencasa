@@ -30,7 +30,6 @@ function Section({
   return (
     <Flex
       as="section"
-      minH="100vh"
       direction={{ base: "column", lg: "row" }}
       justifyContent="center"
       gap={{ base: 8, lg: 16 }}

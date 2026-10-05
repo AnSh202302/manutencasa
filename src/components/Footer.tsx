@@ -27,9 +27,29 @@ function Footer() {
           </VStack>
 
           <Flex gap={2} flexWrap="nowrap" w="full" maxW="sm">
+                  <CustomButton
+              asChild
+              flex="1"
+              minW={0}
+              h="48px"
+              px={{ base: 2, md: 4 }}
+              fontSize={{ base: "sm", md: "md" }}
+              whiteSpace="nowrap"
+              _focusVisible={{
+                outline: "2px solid",
+                outlineColor: "brand.yellow",
+                outlineOffset: "2px",
+              }}
+            >
+              <ContactLink href="tel:+393289487163">
+                <LuPhone />
+                Chiama
+              </ContactLink>
+            </CustomButton>
             <CustomButton
               asChild
-              bgColor="brand.green"
+                            variant1
+
               flex="1"
               minW={0}
               h="48px"
@@ -52,26 +72,7 @@ function Footer() {
               </ContactLink>
             </CustomButton>
 
-            <CustomButton
-              asChild
-              variant1
-              flex="1"
-              minW={0}
-              h="48px"
-              px={{ base: 2, md: 4 }}
-              fontSize={{ base: "sm", md: "md" }}
-              whiteSpace="nowrap"
-              _focusVisible={{
-                outline: "2px solid",
-                outlineColor: "brand.yellow",
-                outlineOffset: "2px",
-              }}
-            >
-              <ContactLink href="tel:+393289487163">
-                <LuPhone />
-                Chiama
-              </ContactLink>
-            </CustomButton>
+      
           </Flex>
 
           <Flex
