@@ -1,7 +1,7 @@
 import Section from "./Section";
 import { Text, Image, Flex } from "@chakra-ui/react";
 
-function About() {
+function AboutSection() {
   return (
     <Section
       id="about"
@@ -10,21 +10,18 @@ function About() {
       bgImage=" linear-gradient(
 0deg,rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.98) 80% ), url('/manutencasa/about-bg.jpg')"
       directionItems="left"
-      headingPart1="Penso"
-      headingPart2="A tutto io!"
+      headingPart1="Chi sono"
+      headingPart2="Sono Francesco"
       description={
         <>
           <Text>
-           Hai un piccolo lavoro da fare in casa e non sai a chi rivolgerti?
+            Mi chiamo Francesco e mi occupo di manutenzione e piccoli lavori per la casa a Bologna.
           </Text>
           <Text mt={6}>
-            Con ManutenCasa hai un unico punto di riferimento per le riparazioni e i lavori di manutenzione di tutti i giorni. Mi occupo di piccoli interventi idraulici ed elettrici, tinteggiatura, montaggio, riparazioni e tanti altri lavori per la casa.
+            Aiuto chi ha bisogno di risolvere quei lavori che spesso rimangono in sospeso: una riparazione, un montaggio, un piccolo intervento elettrico o idraulico.
           </Text>
           <Text mt={6}>
-            Lavoro con attenzione e precisione, cercando sempre di trovare una soluzione pratica e adatta alle tue esigenze.
-          </Text>
-          <Text mt={6}>
-            Se hai un lavoro da fare, contattami: raccontami di cosa hai bisogno e valutiamo insieme come risolverlo.
+            Lavoro direttamente con il cliente, cercando una soluzione pratica e adatta alle esigenze della casa.
           </Text>
         </>
       }
@@ -36,4 +33,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutSection;

@@ -1,4 +1,3 @@
-import About from "./components/AboutSection";
 import Contact from "./components/ContactSection";
 import FeaturesSection from "./components/FeaturesSection";
 import Gallery from "./components/GallerySection";
@@ -7,6 +6,7 @@ import Hero from "./components/HeroSection";
 import HowItWorksSection from "./components/HowItWorksSection";
 import Services from "./components/ServicesSection";
 import ProblemCTASection from "./components/ProblemCTASection";
+import AboutSection from "./components/AboutSection";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Services />
         <ProblemCTASection/>
         <HowItWorksSection />
-        <About />
+        <AboutSection />
         <FeaturesSection />
         <Gallery />
         <Contact />
