@@ -9,6 +9,7 @@ import { LuMenu } from "react-icons/lu";
 import dataNavigation from "../../data/navigation";
 import CustomLink from "../CustomLink/HeaderLink";
 import { useState } from "react";
+import CustomButton from "../CustomButton";
 
 function MobileMenu() {
   const [open, setOpen] = useState(false);
@@ -51,7 +52,19 @@ function MobileMenu() {
                     {item.name}
                   </CustomLink>
                 ))}
-              </VStack>
+            <CustomButton size="lg" w="100%" asChild>
+              <a href="tel:+393289487163">Chiama</a>
+            </CustomButton>
+            <CustomButton size="lg" w="100%" asChild variant1>
+              <a
+                href="https://wa.me/393289487163"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp
+              </a>
+            </CustomButton>
+          </VStack>
             </Drawer.Body>
           </Drawer.Content>
         </Drawer.Positioner>
