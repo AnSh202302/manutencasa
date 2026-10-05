@@ -2,28 +2,28 @@ import type { ContentItem } from "../types";
 
 const dataFeatures: ContentItem[] = [
   {
-    title: "Intervento Rapido",
-    description: "Arrivo rapidamente in tutta Bologna.",
-    img: "/manutencasa/interventi-rapidi.jpg",
-    alt: "Un tuttofare con gli attrezzi accanto al suo furgone",
+    title: "Contatto diretto",
+    description: "Parli direttamente con me.",
+    img: "/manutencasa/contatto_diretto.jpg",
+    alt: "Un uomo parla al telefono accanto a un artigiano con cintura portautensili.",
   },
   {
-    title: "Lavoro Garantito",
-    description: "Qualità e attenzione in ogni dettaglio.",
-    img: "/manutencasa/lavoro-garantito.jpg",
-    alt: "Un artigiano al lavoro su un elemento in legno",
+    title: "A domicilio",
+    description: "Intervengo direttamente a casa tua.",
+    img: "/manutencasa/intervengo_direttamente.jpg",
+    alt: "Una porta in legno con maniglia e serratura, accanto a un telefono su un tavolo.",
   },
   {
-    title: "Prezzi Trasparenti",
-    description: "Preventivi chiari, senza costi nascosti.",
-    img: "/manutencasa/prezzi-trasparenti.jpg",
-    alt: "Un preventivo mostrato su una cartellina",
+    title: "Un unico riferimento",
+    description: "Una sola persona per diversi lavori in casa.",
+    img: "/manutencasa/unico_riferimento.jpg",
+    alt: "Una valigetta degli attrezzi, un cacciavite e un metro appoggiati su un tavolo.",
   },
   {
-    title: "Servizio Completo",
-    description: "Un unico professionista per tanti lavori diversi.",
-    img: "/manutencasa/servizio-completo.jpg",
-    alt: "Attrezzi per lavori di manutenzione domestica",
+    title: "Soluzioni pratiche",
+    description: "Vediamo insieme cosa serve per risolvere il problema.",
+    img: "/manutencasa/soluzioni_pratiche.jpg",
+    alt: "Mani usano una livella e un cacciavite per fissare una mensola alla parete.",
   },
 ];
 
