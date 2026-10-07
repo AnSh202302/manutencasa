@@ -26,7 +26,7 @@ function Footer() {
             </Text>
           </VStack>
 
-          <Flex gap={2} flexWrap="nowrap" w="full" maxW="sm">
+          <Flex gap={2} flexWrap="wrap" w="full" maxW="sm">
             <CustomButton asChild >
               <ContactLink cta="chiama" />
             </CustomButton>
