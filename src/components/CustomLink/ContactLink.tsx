@@ -1,5 +1,9 @@
 import { Link, type LinkProps } from "@chakra-ui/react";
-import { LuPhone, LuMessageCircle } from "react-icons/lu";
+import { LuPhone } from "react-icons/lu";
+import { FaWhatsapp } from "react-icons/fa";
+
+
+export const WHATSAPP_URL = "https://wa.me/393289487163";
 
 interface ContactLinkProps extends LinkProps {
   cta?: "chiama" | "whatsapp";
@@ -7,9 +11,9 @@ interface ContactLinkProps extends LinkProps {
 }
 
 function ContactLink({ cta, children, ...props }: ContactLinkProps) {
-  const icon = cta === 'chiama' ? <LuPhone /> : <LuMessageCircle />;
+  const icon = cta === 'chiama' ? <LuPhone /> : <FaWhatsapp />;
   const text = children ?? (cta === 'chiama' ? "Chiama" : "WhatsApp")
-  const href = cta === 'chiama' ? "tel:+393289487163" : cta === 'whatsapp' ? "https://wa.me/393289487163" : undefined
+  const href = cta === 'chiama' ? "tel:+393289487163" : cta === 'whatsapp' ? WHATSAPP_URL : undefined
 
   return (
     <Link
