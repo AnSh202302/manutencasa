@@ -1,5 +1,4 @@
 import { Flex, Text, VStack } from "@chakra-ui/react";
-import { LuPhone, LuMessageCircle } from "react-icons/lu";
 import Section from "./Section";
 import CustomButton from "./CustomButton";
 import ContactLink from "./CustomLink/ContactLink";
@@ -39,7 +38,7 @@ function Footer() {
           </Flex>
 
           <Flex
-            as="footer"
+            as="div"
             w="full"
             direction={{ base: "column", md: "row" }}
             alignItems={{ base: "flex-start", md: "center" }}

@@ -48,6 +48,10 @@ function MobileMenu() {
                   <CustomLink
                     key={item.href}
                     href={item.href}
+                    minH="44px"
+                    px={3}
+                    display="flex"
+                    alignItems="center"
                     onClick={() => setOpen(false)}
                   >
                     {item.name}
