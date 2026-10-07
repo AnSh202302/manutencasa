@@ -13,7 +13,7 @@ function Header() {
         mx="auto"
         gap={2}
         w="100%"
-        h={{ base: "64px", md: "80px" }}
+        h={{ base: "72px", md: "80px" }}
         px={6}
         align="center"
         justify="space-between"
@@ -22,11 +22,11 @@ function Header() {
         bg="brand.white"
         boxShadow="sm"
       >
-        <CustomLink href="/manutencasa/" _hover={{ textDecoration: "none" }}>
+        <CustomLink href="/manutencasa/" _hover={{ textDecoration: "none" }} >
           <Flex align="center" gap={3}>
             <Icon as={MdHandyman} boxSize={8} color="brand.primary" />
 
-            <Box>
+            <Box >
               <Heading
                 as="span"
                 fontSize="lg"
@@ -48,9 +48,9 @@ function Header() {
           </Flex>
         </CustomLink>
 
-        <Flex align="center" gap={{ base: 2, lg: 4 }} display={{ base: "none", md: "flex" }} >
+        <Flex align="center" gap={{ base: 2, md: 6 }} display={{ base: "none", md: "flex" }} >
           <HStack
-            as="nav" aria-label="Navigazione principale" gap={{ base: 2, md: 2 }}>
+            as="nav" aria-label="Navigazione principale" gap={{ base: 2, md: 6 }}>
             {dataNavigation.map(({ name, href }) => (
               <CustomLink
                 key={name}
