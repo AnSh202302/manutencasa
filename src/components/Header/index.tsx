@@ -22,7 +22,7 @@ function Header() {
         bg="brand.white"
         boxShadow="sm"
       >
-        <CustomLink href="/manutencasa/" _hover={{ textDecoration: "none" }} >
+        <CustomLink href="/" _hover={{ textDecoration: "none" }} >
           <Flex align="center" gap={3}>
             <Icon as={MdHandyman} boxSize={8} color="brand.primary" />
 

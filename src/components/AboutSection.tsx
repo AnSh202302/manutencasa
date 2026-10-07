@@ -8,7 +8,7 @@ function AboutSection() {
       alignItems="flex-start"
       pb={0}
       bgImage=" linear-gradient(
-0deg,rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.98) 80% ), url('/manutencasa/about-bg.jpg')"
+0deg,rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.98) 80% ), url('/about-bg.jpg')"
       directionItems="left"
       headingPart1="Chi sono"
       headingPart2="Sono Francesco"
@@ -27,7 +27,7 @@ function AboutSection() {
       }
     >
       <Flex alignSelf="flex-end" w="full" justifyContent="center">
-        <Image src="/manutencasa/Handyman.png" alt="Un artigiano sorridente con cintura porta attrezzi" maxH="34rem" />
+        <Image src="/Handyman.png" alt="Un artigiano sorridente con cintura porta attrezzi" maxH="34rem" />
       </Flex>
     </Section>
   );

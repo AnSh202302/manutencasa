@@ -8,7 +8,7 @@ function FeaturesSection() {
     <Section
 
       wrap="wrap"
-      bgImage={{ lg: "url('/manutencasa/features-bg.jpg')" }}
+      bgImage={{ lg: "url('/features-bg.jpg')" }}
       bgRepeat="no-repeat"
       bgSize="cover"
       bgAttachment="fixed"

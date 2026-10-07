@@ -12,7 +12,7 @@ function Hero() {
       direction={{ base: "column", lg: "row" }}
       gap={10}
       overflow="hidden"
-      bgImage="url('/manutencasa/hero-bg.jpg')"
+      bgImage="url('/hero-bg.jpg')"
       bgSize="cover"
       bgPos="center"
       bgRepeat="no-repeat"
@@ -59,7 +59,7 @@ function Hero() {
       </Box>
 
       <Flex w="full" alignSelf="flex-end" justifyContent="center" zIndex={1}>
-        <Image src="/manutencasa/Francesco_hero.png" alt="Francesco" />
+        <Image src="/Francesco_hero.png" alt="Francesco" />
       </Flex>
     </Flex>
   );

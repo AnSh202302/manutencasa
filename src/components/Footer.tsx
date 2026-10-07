@@ -10,7 +10,7 @@ function Footer() {
       id="contact"
 
       directionItems="left"
-      bgImage="url('/manutencasa/contact-bg.jpg')"
+      bgImage="url('/contact-bg.jpg')"
       bgSize="cover"
       bgRepeat="no-repeat"
       headingPart1="Hai un lavoro da fare?"
