@@ -46,16 +46,16 @@ function HowItWorksSectionSection() {
             _after={
               index === steps.length - 1
                 ? {
-                    content: '""',
-                    display: { base: "block", md: "none" },
-                    position: "absolute",
-                    left: "35px",
-                    top: "48px",
-                    bottom: 0,
-                    width: "1px",
-                    bg: "brand.grey",
-                    zIndex: 1,
-                  }
+                  content: '""',
+                  display: { base: "block", md: "none" },
+                  position: "absolute",
+                  left: "35px",
+                  top: "48px",
+                  bottom: 0,
+                  width: "1px",
+                  bg: "brand.grey",
+                  zIndex: 1,
+                }
                 : undefined
             }
           >
@@ -84,7 +84,7 @@ function HowItWorksSectionSection() {
                       href="https://wa.me/393289487163"
                       target="_blank"
                       rel="noopener noreferrer"
-                      color="inherit"
+                      color="brand.primary"
                       textDecoration="none"
                       _hover={{ color: "brand.primary" }}
                       _focusVisible={{
