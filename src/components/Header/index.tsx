@@ -4,6 +4,7 @@ import MobileMenu from "./MobileMenu";
 import dataNavigation from "../../data/navigation";
 import CustomLink from "../CustomLink/HeaderLink";
 import CustomButton from "../CustomButton";
+import ContactLink from "../CustomLink/ContactLink";
 
 function Header() {
   return (
@@ -47,7 +48,7 @@ function Header() {
           </Flex>
         </CustomLink>
 
-        <Flex align="center" gap={{base:2, lg: 4}} display={{ base: "none", md: "flex" }} >
+        <Flex align="center" gap={{ base: 2, lg: 4 }} display={{ base: "none", md: "flex" }} >
           <HStack
             as="nav" aria-label="Navigazione principale" gap={{ base: 2, md: 2 }}>
             {dataNavigation.map(({ name, href }) => (
@@ -68,18 +69,12 @@ function Header() {
               </CustomLink>
             ))}
           </HStack>
-                  <HStack gap={3} display={{ base: "none", md: "flex" }} >
-            <CustomButton size="sm" asChild>
-              <a href="tel:+393289487163">Chiama</a>
+          <HStack gap={3} display={{ base: "none", md: "flex" }} >
+            <CustomButton size="xs" asChild>
+              <ContactLink cta="chiama" maxW={24} />
             </CustomButton>
-            <CustomButton size="sm" asChild variant1>
-              <a
-                href="https://wa.me/393289487163"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                WhatsApp
-              </a>
+            <CustomButton size="xs" asChild variant1 >
+              <ContactLink cta="whatsapp" maxW={28} />
             </CustomButton>
           </HStack>
         </Flex>

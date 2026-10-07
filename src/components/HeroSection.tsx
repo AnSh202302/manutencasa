@@ -1,7 +1,6 @@
 import { Flex, Heading, Separator, Text, Image, Box } from "@chakra-ui/react";
 import CustomButton from "./CustomButton";
 import ContactLink from "./CustomLink/ContactLink";
-import { LuMessageCircle } from "react-icons/lu";
 
 function Hero() {
   return (
@@ -50,20 +49,12 @@ function Hero() {
 
         <Flex gap={4} wrap="wrap">
           <CustomButton asChild>
-            <ContactLink href="tel:+393289487163">
-                Chiama ora
-              </ContactLink>
+            <ContactLink cta="chiama" />
           </CustomButton>
-          
+
           <CustomButton asChild variant1>
-    <ContactLink
-                href="https://wa.me/393289487163"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LuMessageCircle />
-                WhatsApp
-              </ContactLink>          </CustomButton>
+            <ContactLink cta="whatsapp" />
+          </CustomButton>
         </Flex>
       </Box>
 

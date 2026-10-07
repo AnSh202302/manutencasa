@@ -1,32 +1,29 @@
 import CustomButton from "./CustomButton"
+import ContactLink from "./CustomLink/ContactLink"
 import Section from "./Section"
 
 function ProblemCTASection() {
   return (
-           <Section
-          direction="column"
-          alignItems="flex-start"
-          directionItems="flex-start"
-          minH="unset"
-          headingPart1="Hai un problema?"
-          headingPart2="Non sai se posso aiutarti?"
-          description={
-            <span>
-              Mandami una foto del problema su WhatsApp e spiegami brevemente
-              cosa è successo. Ti dirò se posso occuparmene.
-            </span>
-          }
-        >
-          <CustomButton asChild>
-            <a
-              href="https://wa.me/393289487163?text=Ciao%20Francesco%2C%20ti%20invio%20una%20foto%20del%20problema.%20Puoi%20dirmi%20se%20puoi%20occupartene%3F"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Invia una foto su WhatsApp
-            </a>
-          </CustomButton>
-        </Section>
+    <Section
+      direction="column"
+      alignItems="flex-start"
+      directionItems="flex-start"
+      minH="unset"
+      headingPart1="Hai un problema?"
+      headingPart2="Non sai se posso aiutarti?"
+      description={
+        <span>
+          Mandami una foto del problema su WhatsApp e spiegami brevemente
+          cosa è successo. Ti dirò se posso occuparmene.
+        </span>
+      }
+    >
+      <CustomButton asChild>
+        <ContactLink cta="whatsapp" maxW="sm" href="https://wa.me/393289487163?text=Ciao%20Francesco%2C%20ti%20invio%20una%20foto%20del%20problema.%20Puoi%20dirmi%20se%20puoi%20occupartene%3F" >
+          Invia una foto su WhatsApp
+        </ContactLink>
+      </CustomButton>
+    </Section>
 
   )
 }

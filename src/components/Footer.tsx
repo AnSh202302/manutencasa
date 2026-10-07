@@ -27,52 +27,15 @@ function Footer() {
           </VStack>
 
           <Flex gap={2} flexWrap="nowrap" w="full" maxW="sm">
-                  <CustomButton
-              asChild
-              flex="1"
-              minW={0}
-              h="48px"
-              px={{ base: 2, md: 4 }}
-              fontSize={{ base: "sm", md: "md" }}
-              whiteSpace="nowrap"
-              _focusVisible={{
-                outline: "2px solid",
-                outlineColor: "brand.yellow",
-                outlineOffset: "2px",
-              }}
-            >
-              <ContactLink href="tel:+393289487163">
-                <LuPhone />
-                Chiama
-              </ContactLink>
+            <CustomButton asChild >
+              <ContactLink cta="chiama" />
             </CustomButton>
             <CustomButton
               asChild
-                            variant1
-
-              flex="1"
-              minW={0}
-              h="48px"
-              px={{ base: 2, md: 4 }}
-              fontSize={{ base: "sm", md: "md" }}
-              whiteSpace="nowrap"
-              _focusVisible={{
-                outline: "2px solid",
-                outlineColor: "brand.yellow",
-                outlineOffset: "2px",
-              }}
+              variant1
             >
-              <ContactLink
-                href="https://wa.me/393289487163"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LuMessageCircle />
-                WhatsApp
-              </ContactLink>
+              <ContactLink cta="whatsapp" />
             </CustomButton>
-
-      
           </Flex>
 
           <Flex
@@ -96,9 +59,6 @@ function Footer() {
                 Manutenzione e piccoli lavori per la casa a Bologna
               </Text>
             </VStack>
-
-         
-
             <Text fontSize="xs">© 2026 ManutenCasa</Text>
           </Flex>
         </Flex>
