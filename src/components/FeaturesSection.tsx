@@ -6,6 +6,7 @@ import Section from "./Section";
 function FeaturesSection() {
   return (
     <Section
+
       wrap="wrap"
       bgImage={{ lg: "url('/manutencasa/features-bg.jpg')" }}
       bgRepeat="no-repeat"

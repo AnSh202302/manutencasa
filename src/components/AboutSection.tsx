@@ -27,7 +27,7 @@ function AboutSection() {
       }
     >
       <Flex alignSelf="flex-end" w="full" justifyContent="center">
-        <Image src="/manutencasa/Handyman.png" alt="Un artigiano sorridente con cintura porta attrezzi" />
+        <Image src="/manutencasa/Handyman.png" alt="Un artigiano sorridente con cintura porta attrezzi" maxH="34rem" />
       </Flex>
     </Section>
   );

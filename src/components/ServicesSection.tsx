@@ -10,24 +10,25 @@ function Services() {
       headingPart1="I miei "
       headingPart2="Servizi"
       description={
-     <Box>
-  <Text mb={4}>
-    Hai poco tempo per occuparti dei lavori di casa?
-  </Text>
+        <Box>
+          <Text mb={4}>
+            Hai poco tempo per occuparti dei lavori di casa?
+          </Text>
 
-  <Text mb={4}>
-    Mi occupo di piccoli lavori di manutenzione e riparazione per aiutarti a
-    tenere la tua casa in ordine e a risolvere quei problemi che spesso rimangono
-    in sospeso.
-  </Text>
+          <Text mb={4}>
+            Mi occupo di piccoli lavori di manutenzione e riparazione per aiutarti a
+            tenere la tua casa in ordine e a risolvere quei problemi che spesso rimangono
+            in sospeso.
+          </Text>
 
-  <Text color="brand.yellow" fontWeight="bold">
-    Cosa posso fare per te?
-  </Text>
-</Box>
+          <Text color="brand.yellow" fontWeight="bold">
+            Cosa posso fare per te?
+          </Text>
+        </Box>
       }
     >
       <Flex
+        maxW="72rem"
         direction={{ base: "column", md: "row" }}
         wrap="wrap"
         justify="center"
