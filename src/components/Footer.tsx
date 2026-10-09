@@ -19,9 +19,7 @@ function Footer() {
         <Flex gap={{ base: 6, md: 10 }} flexWrap="wrap" w="full">
           <VStack gap={4} color="brand.white" zIndex={1}>
             <Text fontSize={{ base: "md", md: "lg" }} alignSelf="baseline">
-              Descrivimi il lavoro o il problema che hai in casa. Puoi anche
-              mandarmi una foto: valuteremo insieme se posso occuparmene e come
-              procedere.
+              Descrivimi il lavoro o il problema che hai in casa. Puoi anche inviare una foto: valuteremo insieme se posso aiutarti e come procedere.
             </Text>
           </VStack>
 
@@ -50,14 +48,9 @@ function Footer() {
             color="whiteAlpha.800"
             fontSize="sm"
           >
-            <VStack align="flex-start" gap={1}>
-              <Text color="brand.white" fontWeight="semibold">
-                ManutenCasa di Francesco Berardi
-              </Text>
-              <Text fontSize="xs">
-                Manutenzione e piccoli lavori per la casa a Bologna
-              </Text>
-            </VStack>
+            <Text color="brand.white" fontSize="xs">
+              ManutenCasa di Francesco Berardi  | Manutenzione e piccoli lavori per la casa | P.IVA 04370511208 | Bologna, Italia | Tel. +39 328 948 7163
+            </Text>
             <Text fontSize="xs">© 2026 ManutenCasa</Text>
           </Flex>
         </Flex>
