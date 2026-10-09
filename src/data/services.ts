@@ -23,20 +23,20 @@ const dataServices: ContentItem[] = [
   },
   {
     icon: MdElectricalServices,
-    title: "Lavori elettrici",
+    title: "Piccoli interventi elettrici",
     description: "Sostituzione di prese e interruttori, installazione di lampadari e piccoli interventi elettrici.",
     color: "brand.blue",
   },
   {
     icon: BsDoorOpen,
-    title: "Infissi e serramenti",
+    title: "Tapparelle, porte e finestre",
     description:
       "Riparazione di tapparelle, sigillatura degli spifferi e regolazione di porte e finestre.",
     color: "brand.purple",
   },
   {
     icon: TbAssemblyFilled,
-    title: "Montaggio",
+    title: "Montaggio mobili e mensole",
     description: "Montaggio di mobili, mensole e altri elementi per la casa.",
   },
 ];

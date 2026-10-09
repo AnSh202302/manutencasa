@@ -2,7 +2,7 @@ const questions = [
   {
     question: "Di quali lavori ti occupi?",
     answer:
-      "Mi occupo di piccoli lavori di manutenzione e riparazione, come tinteggiatura, montaggio, interventi idraulici ed elettrici e riparazioni di porte e finestre.",
+      "Mi occupo di tinteggiatura, montaggio di mobili e mensole, piccoli interventi idraulici ed elettrici, riparazione di tapparelle e regolazione di porte e finestre.",
   },
   {
     question: "Lavori a Bologna?",

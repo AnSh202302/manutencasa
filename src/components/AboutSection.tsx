@@ -15,7 +15,7 @@ function AboutSection() {
       description={
         <>
           <Text>
-            Mi chiamo Francesco e mi occupo di manutenzione e piccoli lavori per la casa a Bologna.
+            Mi chiamo Francesco e offro un servizio di tuttofare a domicilio a Bologna per piccoli lavori di manutenzione e riparazione.
           </Text>
           <Text mt={6}>
             Aiuto chi ha bisogno di risolvere quei lavori che spesso rimangono in sospeso: una riparazione, un montaggio, un piccolo intervento elettrico o idraulico.

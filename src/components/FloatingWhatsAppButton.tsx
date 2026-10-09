@@ -5,7 +5,7 @@ export default function FloatingWhatsAppButton() {
   useFloatingWhatsAppVisibility();
 
   return (
-    <ContactLink cta="whatsapp" aria-label="Contattaci su WhatsApp" position="fixed"
+    <ContactLink cta="whatsapp" aria-label="Contattami su WhatsApp" position="fixed"
       right={4}
       bottom={4}
       zIndex={1100}
