@@ -8,7 +8,7 @@ import Services from "./components/ServicesSection";
 import ProblemCTASection from "./components/ProblemCTASection";
 import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
-import ContactLink from "./components/CustomLink/ContactLink";
+import FloatingWhatsAppButton from "./components/FloatingWhatsAppButton";
 
 function App() {
   return (
@@ -23,23 +23,7 @@ function App() {
         <FeaturesSection />
         {/* <Gallery /> */}
         <FAQSection />
-        <ContactLink cta="whatsapp" aria-label="Contattaci su WhatsApp" position="fixed"
-          right={4}
-          bottom={4}
-          zIndex={1100}
-          display={{ base: "flex", md: "none" }}
-          alignItems="center"
-          justifyContent="center"
-          w="56px"
-          h="56px"
-          borderRadius="full"
-          bg="brand.primary" color="white"
-          fontSize="30px"
-          boxShadow="md"
-          _hover={{ bg: "#20bd5a", textDecoration: "none" }}
-          _focusVisible={{ outline: "2px solid", outlineColor: "brand.primary", outlineOffset: "2px" }}
-
-        > </ContactLink>
+        <FloatingWhatsAppButton />
       </main>
       <Footer />
     </>

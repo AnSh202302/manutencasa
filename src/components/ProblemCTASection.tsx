@@ -18,7 +18,7 @@ function ProblemCTASection() {
         </span>
       }
     >
-      <CustomButton asChild>
+      <CustomButton asChild css={{ "@media (max-width: 374px)": { fontSize: "14.5px" } }}>
         <ContactLink cta="whatsapp" maxW="sm" href="https://wa.me/393289487163?text=Ciao%20Francesco%2C%20ti%20invio%20una%20foto%20del%20problema.%20Puoi%20dirmi%20se%20puoi%20occupartene%3F" >
           Invia una foto su WhatsApp
         </ContactLink>

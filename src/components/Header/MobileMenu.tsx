@@ -34,7 +34,7 @@ function MobileMenu() {
           <Drawer.Content aria-label="Navigazione mobile">
             <Drawer.Header>
               <Drawer.CloseTrigger asChild>
-                <CloseButton />
+                <CloseButton aria-label="Chiudi menu" />
               </Drawer.CloseTrigger>
             </Drawer.Header>
 
