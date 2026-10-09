@@ -49,6 +49,7 @@ function CustomCard({ data, ...props }: CustomCardProps) {
             w="100%"
             h={60}
             objectFit="cover"
+            loading="lazy"
           />
         )}
 
