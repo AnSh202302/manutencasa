@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://manutencasa.it/sitemap.xml
