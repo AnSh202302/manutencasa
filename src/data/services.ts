@@ -3,6 +3,7 @@ import { FaFaucetDrip } from "react-icons/fa6";
 import { MdElectricalServices } from "react-icons/md";
 import { BsDoorOpen } from "react-icons/bs";
 import { TbAssemblyFilled } from "react-icons/tb";
+import { GiTrowel } from "react-icons/gi";
 import type { ContentItem } from "../types";
 
 const dataServices: ContentItem[] = [
@@ -39,6 +40,12 @@ const dataServices: ContentItem[] = [
     title: "Montaggio mobili e mensole",
     description: "Montaggio di mobili, mensole e altri elementi per la casa.",
   },
+  {
+    icon: GiTrowel,
+      title: "Riparazioni edili",
+    description: "Piccoli interventi di muratura, riparazione di crepe, buchi e parti danneggiate di pareti e intonaci.",
+    color: "brand.yellow",
+  }
 ];
 
 export default dataServices;
