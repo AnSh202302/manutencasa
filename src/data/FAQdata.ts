@@ -2,12 +2,12 @@ const questions = [
   {
     question: "Di quali lavori ti occupi?",
     answer:
-      "Mi occupo di tinteggiatura, montaggio di mobili e mensole, piccoli interventi idraulici ed elettrici, riparazione di tapparelle e regolazione di porte e finestre.",
+      "Mi occupo di tinteggiatura, montaggio di mobili e mensole, piccoli interventi idraulici ed elettrici, riparazioni edili, riparazione di tapparelle e regolazione di porte e finestre.",
   },
   {
-    question: "Lavori a Bologna?",
+    question: "In quali zone lavori?",
     answer:
-      "Sì. Mi occupo di manutenzione e piccoli lavori per la casa a Bologna.",
+      "Intervengo a Bologna e provincia. Contattami indicando la zona e il tipo di lavoro da fare, così possiamo valutare insieme l’intervento.",
   },
   {
     question: "Come posso spiegarti il problema?",

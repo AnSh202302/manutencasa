@@ -26,19 +26,19 @@ function Hero() {
       }}
     >
       <Box
-        maxW={{ base: "30rem", md: "50rem" }}
         alignSelf="center"
         mt={{ base: 8, md: 12, lg: 0 }}
         zIndex={1}
       >
         <Heading
           as="h1"
-          fontSize={{ base: "3xl", md: "7xl", lg: "7xl" }}
+          fontSize="clamp(1.875rem, 6vw, 5rem)"
+          textWrap="balance"
           fontWeight="900"
           lineHeight="1.1"
           color="brand.white"
         >
-          Manutenzione e riparazioni casa a Bologna
+          Manutenzione e riparazioni casa a Bologna e{"\u00a0"}provincia
         </Heading>
 
         <Separator my={6} borderColor="brand.white" maxW="120px" size="lg" />
