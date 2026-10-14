@@ -14,16 +14,16 @@ const dataFeatures: ContentItem[] = [
     alt: "Una porta in legno con maniglia e serratura, accanto a un telefono su un tavolo.",
   },
   {
-    title: "Un unico riferimento",
-    description: "Una sola persona per diversi lavori in casa.",
-    img: "/unico_riferimento.webp",
-    alt: "Una valigetta degli attrezzi, un cacciavite e un metro appoggiati su un tavolo.",
-  },
-  {
     title: "Soluzioni pratiche",
     description: "Vediamo insieme cosa serve per risolvere il problema.",
-    img: "/soluzioni_pratiche.webp",
-    alt: "Mani usano una livella e un cacciavite per fissare una mensola alla parete.",
+    img: "/soluzioni_pratiche-card.webp",
+    alt: "Una parete in fase di tinteggiatura con un rullo e un secchio di vernice.",
+  },
+  {
+    title: "Un unico riferimento",
+    description: "Una sola persona per diversi lavori in casa.",
+    img: "/unico_riferimento-card.webp",
+    alt: "Una cassetta in legno con attrezzi appoggiata su un tavolo.",
   },
 ];
 
