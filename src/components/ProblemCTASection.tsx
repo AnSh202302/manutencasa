@@ -1,4 +1,4 @@
-import CustomButton from "./CustomButton"
+import CustomButton from "./Buttons/CustomButton"
 import ContactLink from "./CustomLink/ContactLink"
 import Section from "./Section"
 

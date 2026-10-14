@@ -1,3 +1,4 @@
+import { EmailContactProvider } from "./components/EmailContact/EmailContactProvider";
 import FAQSection from "./components/FAQSection";
 import FeaturesSection from "./components/FeaturesSection";
 // import Gallery from "./components/GallerySection";  
@@ -12,7 +13,7 @@ import FloatingWhatsAppButton from "./components/FloatingWhatsAppButton";
 
 function App() {
   return (
-    <>
+    <EmailContactProvider>
       <Header />
       <main>
         <Hero />
@@ -26,7 +27,7 @@ function App() {
         <FloatingWhatsAppButton />
       </main>
       <Footer />
-    </>
+    </EmailContactProvider>
   );
 }
 

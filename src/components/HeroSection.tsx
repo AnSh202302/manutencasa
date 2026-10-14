@@ -1,5 +1,5 @@
 import { Flex, Heading, Separator, Text, Image, Box } from "@chakra-ui/react";
-import CustomButton from "./CustomButton";
+import CustomButton from "./Buttons/CustomButton";
 import ContactLink from "./CustomLink/ContactLink";
 
 function Hero() {
@@ -52,7 +52,7 @@ function Hero() {
             <ContactLink cta="chiama" />
           </CustomButton>
 
-          <CustomButton asChild variant1>
+          <CustomButton asChild colorVariant="secondary">
             <ContactLink cta="whatsapp" />
           </CustomButton>
         </Flex>

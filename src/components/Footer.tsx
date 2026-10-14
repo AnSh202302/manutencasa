@@ -1,6 +1,7 @@
+import { EmailContactButton } from "./EmailContact/EmailContactButton";
 import { Flex, Text, VStack } from "@chakra-ui/react";
 import Section from "./Section";
-import CustomButton from "./CustomButton";
+import CustomButton from "./Buttons/CustomButton";
 import ContactLink from "./CustomLink/ContactLink";
 
 function Footer() {
@@ -23,16 +24,17 @@ function Footer() {
             </Text>
           </VStack>
 
-          <Flex gap={2} flexWrap="wrap" w="full" maxW="sm">
+          <Flex gap={2} flexWrap="wrap" w="full">
             <CustomButton asChild >
               <ContactLink cta="chiama" />
             </CustomButton>
             <CustomButton
               asChild
-              variant1
+              colorVariant="secondary"
             >
               <ContactLink cta="whatsapp" />
             </CustomButton>
+            <EmailContactButton w="full" maxW={{ md: "200px" }} />
           </Flex>
 
           <Flex
