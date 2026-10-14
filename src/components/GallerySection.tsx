@@ -1,4 +1,4 @@
-import { Flex, Text } from "@chakra-ui/react";
+import { Grid, Text } from "@chakra-ui/react";
 import Section from "./Section";
 import GalleryCard from "./Cards/GalleryCard";
 import galleryImages from "../data/galleryImg";
@@ -12,17 +12,18 @@ function Gallery() {
       headingPart2="I risultati del mio lavoro:"
       description={<Text>Prima e dopo</Text>}
     >
-      <Flex
+      <Grid
         w="full"
         maxW="1700px"
         mx="auto"
-        direction={{ base: "column", lg: "row" }}
+        templateColumns={{ base: "1fr", lg: "repeat(3, minmax(0, 1fr))" }}
+        alignItems="start"
         gap={{ base: 6, lg: 12 }}
       >
         {galleryImages.map((galleryImage) => (
           <GalleryCard data={galleryImage} key={galleryImage.before} />
         ))}
-      </Flex>
+      </Grid>
     </Section>
   );
 }
