@@ -1,31 +1,20 @@
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { EmailContactProvider } from "./components/EmailContact/EmailContactProvider";
-import FAQSection from "./components/FAQSection";
-import FeaturesSection from "./components/FeaturesSection";
-import Gallery from "./components/GallerySection";
-import Header from "./components/Header";
-import Hero from "./components/HeroSection";
-import HowItWorksSection from "./components/HowItWorksSection";
-import Services from "./components/ServicesSection";
-import ProblemCTASection from "./components/ProblemCTASection";
-import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
-import FloatingWhatsAppButton from "./components/FloatingWhatsAppButton";
+import HomePage from "./pages/HomePage";
+
+
 
 function App() {
+  const { pathname } = useLocation();
+
   return (
-    <EmailContactProvider>
-      <Header />
-      <main>
-        <Hero />
-        <Services />
-        <ProblemCTASection />
-        <HowItWorksSection />
-        <AboutSection />
-        <FeaturesSection />
-        <Gallery />
-        <FAQSection />
-        <FloatingWhatsAppButton />
-      </main>
+    <EmailContactProvider key={pathname}>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+      </Routes>
       <Footer />
     </EmailContactProvider>
   );

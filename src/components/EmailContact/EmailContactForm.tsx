@@ -1,5 +1,6 @@
+import { Link as RouterLink } from "react-router-dom";
 import { useState, type FormEvent } from "react";
-import { Field, Input, Text, Textarea, VStack } from "@chakra-ui/react";
+import { Field, Input, Link, Text, Textarea, VStack } from "@chakra-ui/react";
 import { LuMail } from "react-icons/lu";
 import CustomButton from "../Buttons/CustomButton";
 
@@ -83,6 +84,11 @@ export default function EmailContactForm({ onSuccess, onClose }: EmailContactFor
           <Field.HelperText>Da 10 a 3000 caratteri.</Field.HelperText>
           <Field.ErrorText>{errors.message}</Field.ErrorText>
         </Field.Root>
+        <Text fontSize="sm" lineHeight="tall">
+          I dati inseriti saranno utilizzati esclusivamente per rispondere alla tua richiesta.
+          Per maggiori informazioni, consulta la nostra{" "}
+          <Link asChild textDecoration="underline" _focusVisible={{ outline: "2px solid", outlineColor: "brand.text", outlineOffset: "2px" }}><RouterLink to="/privacy-policy">Informativa sulla Privacy</RouterLink></Link>.
+        </Text>
         <CustomButton type="submit" disabled={status === "sending"} loading={status === "sending"} loadingText="Invio in corso" size="md"><LuMail /> Invia richiesta</CustomButton>
         {status === "error" && <Text role="alert" color="red.600" fontSize="sm">Non è stato possibile inviare la richiesta. Riprova oppure contattami per telefono o WhatsApp.</Text>}
       </VStack>

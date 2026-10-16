@@ -1,5 +1,6 @@
+import { Link as RouterLink } from "react-router-dom";
 import { EmailContactButton } from "./EmailContact/EmailContactButton";
-import { Flex, Text, VStack } from "@chakra-ui/react";
+import { Flex, Link, Text, VStack } from "@chakra-ui/react";
 import Section from "./Section";
 import CustomButton from "./Buttons/CustomButton";
 import ContactLink from "./CustomLink/ContactLink";
@@ -47,13 +48,13 @@ function Footer() {
             borderTop="1px solid"
             borderColor="whiteAlpha.400"
             pt={5}
-            color="whiteAlpha.800"
-            fontSize="sm"
+            color="brand.white"
+            fontSize="xs"
           >
-            <Text color="brand.white" fontSize="xs">
+            <Text>
               ManutenCasa di Francesco Berardi  | Manutenzione e piccoli lavori per la casa | P.IVA 04370511208 | Bologna, Italia | Tel. +39 328 948 7163
             </Text>
-            <Text fontSize="xs">© 2026 ManutenCasa</Text>
+            <Text>© 2026 ManutenCasa | <Link asChild color="brand.white" textDecoration="underline"><RouterLink to="/privacy-policy">Privacy Policy</RouterLink></Link></Text>
           </Flex>
         </Flex>
       }
