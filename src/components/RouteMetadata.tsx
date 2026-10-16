@@ -54,6 +54,8 @@ export default function RouteMetadata() {
     previousPath.current = pathname;
     const heading = document.querySelector<HTMLElement>("main h1");
     heading?.setAttribute("tabindex", "-1");
+    // This heading is a screen-reader focus target, not an interactive control.
+    heading?.style.setProperty("outline", "none");
     heading?.focus({ preventScroll: true });
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [pathname]);
