@@ -4,7 +4,7 @@ export default function useFloatingWhatsAppVisibility() {
   // Measure before paint to avoid briefly exposing an overlapping button on restored scroll.
   useLayoutEffect(() => {
     const floating = document.querySelector<HTMLAnchorElement>(
-      'a[aria-label="Contattaci su WhatsApp"]',
+      'a[aria-label="Contattami su WhatsApp"]',
     );
     if (!floating) return;
 

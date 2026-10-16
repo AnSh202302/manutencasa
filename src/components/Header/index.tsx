@@ -1,78 +1,28 @@
-import { Box, Flex, Heading, Icon, HStack, Text } from "@chakra-ui/react";
-import { MdHandyman } from "react-icons/md";
-import MobileMenu from "./MobileMenu";
-import dataNavigation from "../../data/navigation";
-import CustomLink from "../CustomLink/HeaderLink";
+import { Box, } from "@chakra-ui/react";
+import { useLocation } from "react-router-dom";
+import PrivacyHeaderContent from "./PrivacyHeaderContent";
+import HomeHeaderContent from "./HomeHeaderContent";
+
 
 function Header() {
+  const { pathname } = useLocation();
+  const isPrivacy = pathname.replace(/\/+$/, "") === "/privacy-policy";
+
   return (
-    <Box as="header" role="banner" position="sticky" top={0} zIndex={1000}>
-      <Flex
-        mx="auto"
-        gap={2}
-        w="100%"
-        h={{ base: "72px", md: "80px" }}
-        px={{ base: 3, md: 6 }}
-        align="center"
-        justify="space-between"
-        borderBottom="1px solid"
-        borderColor="gray.200"
-        bg="brand.white"
-        boxShadow="sm"
-      >
-        <CustomLink href="/" _hover={{ textDecoration: "none" }} >
-          <Flex align="center" gap={3}>
-            <Icon as={MdHandyman} boxSize={8} color="brand.primary" />
-
-            <Box >
-              <Heading
-                as="span"
-                fontSize="lg"
-                lineHeight="short"
-                fontWeight="bold"
-              >
-                ManutenCasa
-              </Heading>
-              <Text
-                as="p"
-                fontSize="xs"
-                fontFamily="heading"
-                fontWeight="semibold"
-                lineHeight="short"
-              >
-                di Francesco Berardi
-              </Text>
-            </Box>
-          </Flex>
-        </CustomLink>
-
-        <Flex align="center" gap={{ base: 2, md: 6 }} display={{ base: "none", lg: "flex" }} >
-          <HStack
-            as="nav" aria-label="Navigazione principale" gap={{ base: 2, md: 6 }}>
-            {dataNavigation.map(({ name, href }) => (
-              <CustomLink
-                key={name}
-                href={href}
-                _hover={{
-                  textDecoration: "none",
-                  color: "brand.primary",
-                }}
-                _focusVisible={{
-                  outline: "2px solid",
-                  outlineColor: "brand.primary",
-                  borderRadius: "4px",
-                }}
-              >
-                {name}
-              </CustomLink>
-            ))}
-          </HStack>
-        </Flex>
-
-        <HStack gap={1} display={{ base: "flex", lg: "none" }}>
-          <MobileMenu />
-        </HStack>
-      </Flex>
+    <Box
+      as="header"
+      role="banner"
+      position="sticky"
+      alignContent="center"
+      top={0}
+      zIndex={1000}
+      mx="auto"
+      px={{ base: 4, md: 8, lg: 12 }}
+      h={{ base: 16, md: 20 }}
+      bg="brand.white"
+      boxShadow="sm"
+    >
+      {isPrivacy ? <PrivacyHeaderContent /> : <HomeHeaderContent />}
     </Box>
   );
 }

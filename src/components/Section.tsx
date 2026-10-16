@@ -34,7 +34,7 @@ function Section({
       justifyContent="center"
       gap={{ base: 8, lg: 16 }}
       py={12}
-      px={{ base: 6, md: 8, lg: 10 }}
+      px={{ base: 6, md: 8, lg: 12 }}
       position="relative"
       overflow="hidden"
       scrollMarginTop={{ base: 14 }}

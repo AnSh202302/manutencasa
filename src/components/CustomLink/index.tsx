@@ -6,7 +6,7 @@ function CustomLink(props: LinkProps) {
       fontSize={{ base: "2xl", md: "md" }}
       fontWeight="bold"
       _hover={{ textDecoration: "none", color: "brand.primary" }}
-      _focus={{ outline: "none", color: "brand.primary" }}
+      _focusVisible={{ outline: "none", color: "brand.primary" }}
       {...props}
     />
   );

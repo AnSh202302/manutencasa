@@ -1,5 +1,5 @@
-import ContactLink from "./CustomLink/ContactLink";
-import useFloatingWhatsAppVisibility from "../hooks/useFloatingWhatsAppVisibility";
+import ContactLink from "../CustomLink/ContactLink";
+import useFloatingWhatsAppVisibility from "../../hooks/useFloatingWhatsAppVisibility";
 
 export default function FloatingWhatsAppButton() {
   useFloatingWhatsAppVisibility();
