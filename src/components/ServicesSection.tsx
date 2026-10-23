@@ -1,4 +1,4 @@
-import { Flex, Text, Box, Span, SimpleGrid } from "@chakra-ui/react";
+import { Text, Box, Span, SimpleGrid } from "@chakra-ui/react";
 import Section from "./Section";
 import dataServices from "../data/services";
 import CustomCard from "./Cards/CustomCard";

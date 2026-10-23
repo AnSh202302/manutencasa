@@ -1,4 +1,4 @@
-import { Flex, SimpleGrid } from "@chakra-ui/react";
+import { SimpleGrid } from "@chakra-ui/react";
 import dataFeatures from "../data/features";
 import CustomCard from "./Cards/CustomCard";
 import Section from "./Section";
