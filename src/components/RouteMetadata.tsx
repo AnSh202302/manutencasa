@@ -3,9 +3,9 @@ import { useLocation } from "react-router-dom";
 
 // Keep the original homepage metadata when navigating back from the policy.
 const homeMetadata: Record<string, string> = {
-  "description": "ManutenCasa di Francesco Berardi: manutenzione casa a Bologna e provincia. Tinteggiatura, montaggio, riparazioni edili e piccoli interventi idraulici ed elettrici.",
-  "og:title": "ManutenCasa | Manutenzione e riparazioni casa a Bologna e provincia",
-  "og:description": "ManutenCasa di Francesco Berardi: manutenzione casa a Bologna e provincia. Tinteggiatura, montaggio, riparazioni edili e piccoli interventi idraulici ed elettrici.",
+  "description": "ManutenCasa di Francesco Berardi: tuttofare a Bologna e provincia per manutenzione casa, tinteggiatura, montaggio mobili e piccole riparazioni. Contattami.",
+  "og:title": "ManutenCasa di Francesco Berardi | Tuttofare a Bologna",
+  "og:description": "ManutenCasa di Francesco Berardi: tuttofare a Bologna e provincia per manutenzione casa, tinteggiatura, montaggio mobili e piccole riparazioni. Contattami.",
   "og:type": "website",
   "og:url": "https://manutencasa.it/",
   "og:locale": "it_IT",
@@ -17,12 +17,12 @@ const homeMetadata: Record<string, string> = {
   "og:image:height": "630",
   "og:image:alt": "ManutenCasa - Manutenzione e riparazioni casa a Bologna",
   "twitter:card": "summary_large_image",
-  "twitter:title": "ManutenCasa | Manutenzione e riparazioni casa a Bologna e provincia",
-  "twitter:description": "ManutenCasa di Francesco Berardi: manutenzione casa a Bologna e provincia. Tinteggiatura, montaggio, riparazioni edili e piccoli interventi idraulici ed elettrici.",
+  "twitter:title": "ManutenCasa di Francesco Berardi | Tuttofare a Bologna e provincia",
+  "twitter:description": "ManutenCasa di Francesco Berardi: tuttofare a Bologna e provincia per manutenzione casa, tinteggiatura, montaggio mobili e piccole riparazioni. Contattami.",
   "twitter:image": "https://manutencasa.it/social-preview.jpg",
   "twitter:image:alt": "ManutenCasa - Manutenzione e riparazioni casa a Bologna"
 };
-const homeTitle = "ManutenCasa | Manutenzione e riparazioni casa a Bologna e provincia";
+const homeTitle = "ManutenCasa di Francesco Berardi | Tuttofare a Bologna";
 
 export default function RouteMetadata() {
   const { pathname } = useLocation();
@@ -33,11 +33,13 @@ export default function RouteMetadata() {
     const description = privacy
       ? "Informazioni sul trattamento dei dati personali per richieste di contatto, email, WhatsApp e navigazione sul sito ManutenCasa."
       : homeMetadata.description;
-    const canonical = privacy ? "https://manutencasa.it/privacy-policy" : "https://manutencasa.it/";
+    const canonical = privacy ? "https://manutencasa.it/privacy-policy/" : "https://manutencasa.it/";
     document.title = title;
-    const metadata = { ...homeMetadata, description, "og:title": title,
+    const metadata = {
+      ...homeMetadata, description, "og:title": title,
       "og:description": description, "og:url": canonical,
-      "twitter:title": title, "twitter:description": description };
+      "twitter:title": title, "twitter:description": description
+    };
     for (const [key, content] of Object.entries(metadata)) {
       const attribute = key.startsWith("og:") ? "property" : "name";
       let meta = document.head.querySelector<HTMLMetaElement>(`meta[${attribute}="${key}"]`);

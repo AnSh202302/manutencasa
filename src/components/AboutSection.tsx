@@ -11,11 +11,11 @@ function AboutSection() {
 0deg,rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.98) 80% ), url('/about-bg.jpg')"
       directionItems="left"
       headingPart1="Chi sono"
-      headingPart2="Sono Francesco"
+      headingPart2="Sono Francesco Berardi"
       description={
         <>
           <Text>
-            Mi chiamo Francesco e offro un servizio di tuttofare a domicilio a Bologna e provincia per piccoli lavori di manutenzione e riparazione della casa.
+            Mi chiamo Francesco, sono il titolare di ManutenCasa e offro un servizio di tuttofare a domicilio a Bologna e provincia per piccoli lavori di manutenzione e riparazione della casa.
           </Text>
           <Text mt={6}>
             Aiuto chi ha bisogno di risolvere quei lavori che spesso rimangono in sospeso: una riparazione, un montaggio, un piccolo intervento elettrico o idraulico.
