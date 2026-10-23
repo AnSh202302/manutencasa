@@ -8,7 +8,14 @@ import CustomLink from "../CustomLink";
 function HomeHeaderContent() {
     return (
         <Flex h="100%" justify="space-between">
-            <CustomLink href="/">
+            <CustomLink href="/"
+                _hover={{
+                    textDecoration: "none",
+                    transform: "scale(1.05)",
+                    color: "brand.primary"
+                }}
+
+            >
                 <Flex align="center" gap={4}>
                     <Icon as={MdHandyman} boxSize={8} color="brand.primary" />
                     <Box >
@@ -41,6 +48,7 @@ function HomeHeaderContent() {
                     ))}
                 </HStack>
             </Flex>
+
 
             <HStack gap={1} display={{ base: "flex", md: "none" }}>
                 <MobileMenu />

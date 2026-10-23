@@ -12,9 +12,11 @@ import type { TextProps } from "@chakra-ui/react";
 interface SectionProps extends FlexProps {
   headingPart1: string;
   headingPart2: string;
+
   description?: ReactNode;
   directionItems?: TextProps["textAlign"];
   children?: ReactNode;
+  colorHeading1?: string;
   colorHeading2?: string;
 }
 
@@ -23,6 +25,7 @@ function Section({
   headingPart2,
   description,
   directionItems = "center",
+  colorHeading1,
   colorHeading2,
   children,
   ...flexProps
@@ -32,9 +35,9 @@ function Section({
       as="section"
       direction={{ base: "column", lg: "row" }}
       justifyContent="center"
-      gap={{ base: 8, lg: 16 }}
+      gap={{ base: 8, lg: 8 }}
       py={12}
-      px={{ base: 6, md: 8, lg: 12 }}
+      px={{ base: 6, md: 8, lg: 28 }}
       position="relative"
       overflow="hidden"
       scrollMarginTop={{ base: 14 }}
@@ -44,7 +47,7 @@ function Section({
         direction="column"
         w="full"
         alignItems={directionItems}
-        gap={6}
+        gap={4}
         zIndex={1}
       >
         <Text
@@ -52,7 +55,7 @@ function Section({
           textStyle="lg"
           fontFamily="heading"
           fontWeight="semibold"
-          color="brand.primary"
+          color={colorHeading1 ? colorHeading1 : "brand.primary"}
         >
           {headingPart1}
         </Text>

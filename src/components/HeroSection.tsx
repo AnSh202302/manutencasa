@@ -8,7 +8,8 @@ function Hero() {
       as="section"
       position="relative"
       minH="calc(100vh - 80px)"
-      px={{ base: 6, md: 12, lg: 20 }}
+      px={{ base: 6, md: 12, lg: 28 }}
+
       direction={{ base: "column", lg: "row" }}
       gap={10}
       overflow="hidden"

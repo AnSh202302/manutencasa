@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, SimpleGrid } from "@chakra-ui/react";
 import dataFeatures from "../data/features";
 import CustomCard from "./Cards/CustomCard";
 import Section from "./Section";
@@ -16,16 +16,15 @@ function FeaturesSection() {
       headingPart1="I miei"
       headingPart2="Punti di forza"
     >
-      <Flex
-        direction={{ base: "column", md: "row" }}
-        wrap="wrap"
-        justify="center"
+      <SimpleGrid
+        columns={{ base: 1, md: 2, lg: 4 }}
         gap={4}
+
       >
         {dataFeatures.map((feature) => (
           <CustomCard key={feature.title} data={feature} />
         ))}
-      </Flex>
+      </SimpleGrid>
     </Section>
   );
 }

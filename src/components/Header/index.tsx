@@ -17,10 +17,10 @@ function Header() {
       top={0}
       zIndex={1000}
       mx="auto"
-      px={{ base: 4, md: 8, lg: 12 }}
+      px={{ base: 4, md: 8, lg: 28 }}
       h={{ base: 16, md: 20 }}
       bg="brand.white"
-      boxShadow="sm"
+      boxShadow="lg"
     >
       {isPrivacy ? <PrivacyHeaderContent /> : <HomeHeaderContent />}
     </Box>

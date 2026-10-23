@@ -9,6 +9,10 @@ function ProblemCTASection() {
       alignItems="flex-start"
       directionItems="flex-start"
       minH="unset"
+      backgroundColor="brand.primary"
+      color="brand.white"
+      colorHeading1="brand.white"
+      colorHeading2="brand.white"
       headingPart1="Hai un problema?"
       headingPart2="Non sai se posso aiutarti?"
       description={
@@ -18,7 +22,7 @@ function ProblemCTASection() {
         </span>
       }
     >
-      <CustomButton asChild css={{ "@media (max-width: 374px)": { fontSize: "14.5px" } }}>
+      <CustomButton asChild css={{ "@media (max-width: 374px)": { fontSize: "14.5px" } }} backgroundColor="brand.white" color="brand.black">
         <ContactLink cta="whatsapp" maxW="sm" href="https://wa.me/393289487163?text=Ciao%20Francesco%2C%20ti%20invio%20una%20foto%20del%20problema.%20Puoi%20dirmi%20se%20puoi%20occupartene%3F" >
           Invia una foto su WhatsApp
         </ContactLink>
